@@ -468,7 +468,7 @@ function kadima_customizer( $wp_customize ) {
 				)
 			);
 			$wp_customize->add_setting(
-			   'kadima_options[custom_img_'$ci.'_'.$i.']',
+			   'kadima_options[custom_img_'.$ci.'_'.$i.']',
 				array(
 					'default'			=>esc_attr($wl_theme_options['custom_img_'.$ci.'_'.$i]),
 					'type'				=>'option',
@@ -488,7 +488,7 @@ function kadima_customizer( $wp_customize ) {
 			$wp_customize->add_setting(
 			   'kadima_options[custom_text_'.$ci.'_'.$i.']',
 				array(
-					'default'			=> esc_attr($wl_theme_options['custom_text_'.$ci.'_'$i]),
+					'default'			=> esc_attr($wl_theme_options['custom_text_'.$ci.'_'.$i]),
 					'type'				=> 'option',
 					'sanitize_callback'	=> 'kadima_sanitize_text',
 					'capability'		=> 'edit_theme_options',
