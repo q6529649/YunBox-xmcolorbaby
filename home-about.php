@@ -18,8 +18,8 @@
 																<i class="lnr"><img style="float:right;" src="<?php echo esc_url($wl_theme_options['custom_img_1_'.$i]); ?>" style="height: 60px;"></i>
 															<?php } ?>
 													
-															<div style="float: right;text-align: right;padding-top: 20px;padding-right: 20px;">
-																<?php if($wl_theme_options['custom_title_1_'.$i] !='') { ?><h3 style="text-align: center;font-size: 18px;font-weight: bold;margin-top:0 !important;"><?php echo esc_attr($wl_theme_options['custom_title_1_'.$i]); ?></h3><?php } ?>
+															<div style="float: right;text-align: right;padding-top: 10px;padding-right: 20px;width: 80%;">
+																<?php if($wl_theme_options['custom_title_1_'.$i] !='') { ?><h3 style="font-size: 18px;font-weight: bold;margin-top:0 !important;"><?php echo esc_attr($wl_theme_options['custom_title_1_'.$i]); ?></h3><?php } ?>
 																<?php if($wl_theme_options['custom_text_1_'.$i] !='') { ?><p style="font-size: 16px"><?php echo apply_filters('the_content', $wl_theme_options['custom_text_1_'.$i], true); ?></p><?php } ?>
 															</div>
 															<a href="<?php echo esc_url($wl_theme_options['custom_link_1_'.$i]); ?>">
