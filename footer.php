@@ -3,23 +3,39 @@
 <!-- Footer Widget Secton -->
 <div class="kadima_footer_widget_area">
 	<div class="container">
-		<div class="row">
-			<?php
-			if ( is_active_sidebar( 'footer-widget-area' ) ){
-				dynamic_sidebar( 'footer-widget-area' );
-			} else
-			{
-			$args = array(
-				'before_widget' => '<div class="col-md-3 col-sm-6 kadima_footer_widget_column">',
-				'after_widget'  => '</div>',
-				'before_title'  => '<div class="kadima_footer_widget_title">',
-				'after_title'   => '<div class="kadima-footer-separator"></div></div>'
-			);
-			the_widget('WP_Widget_Pages', null, $args);
-			} ?>
-		</div>
+		<div class="col-md-12">
+			<div class="col-md-5">
+				<div style="margin-bottom: 20px;">
+					<h6 style="margin-top:0;margin-bottom:0;color:#fff;">ADD: </h6>
+					<span style="color:#fff;">No.250, Jinting North Road, Xinlin Zhongyacheng, Jimei District, Xiamen, China</span>
+				</div>
+				<div style="margin-bottom: 20px;">
+					<h6 style="margin-top:0;margin-bottom:0;color:#fff;">TEL: </h6>
+					<span style="color:#fff;">0086-592-6099836</span>
+				</div>
+				<div style="margin-bottom: 20px;">
+					<h6 style="margin-top:0;margin-bottom:0;color:#fff;">FAX: </h6>
+					<span style="color:#fff;">0086-592-6099557</span>
+				</div>
+				<div style="margin-bottom: 20px;">
+					<h6 style="margin-top:0;margin-bottom:0;color:#fff;">Email: </h6>
+					<span style="color:#fff;">sam@xmcolorbaby.com</span>
+				</div>
+			</div>
+			<div class="col-md-7">
+			<div style="margin-bottom: 20px;">	
+				<span style="color:#fff;">f you have any questions or comments, please contact us using the form below.</span>
+					<input id="yourname" class="form-control" style="height: 34px; background-color: #fff;margin-bottom: 10px;margin-top: 20px;" type="email" placeholder="Name" />
+					<input id="yourname" class="form-control" style="height: 34px; background-color: #fff;margin-bottom: 10px;" type="email" placeholder="Email" />
+					<textarea id="yourmessage" name="yourmessage" class="form-control" rows="5" placeholder="Message" value=""></textarea>
+					<p style="margin-top:10px;"><button style="background-color:#ffb01e;color:#fff; padding-right: 30px;padding-left: 30px; "  class="btn btn-default" type="submit">SEND</button></p>
+			</div>
+			</div>
+					
+		</div>   
 	</div>
 </div>
+
 <div class="kadima_footer_area">
 		<div class="container">
 			<div class="col-md-12">

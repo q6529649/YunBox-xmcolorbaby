@@ -42,16 +42,7 @@
 			<!-- Logo & Contact Info -->
 			<div class="row ">
 				<div class="col-md-6 col-sm-12 wl_rtl" >
-					<div class="logo">
-					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<?php if($wl_theme_options['upload_image_logo']){ ?>
-						<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
-						<?php } else {
-							echo get_bloginfo('name');
-						} ?>
-					</a>
-					<p><?php bloginfo( 'description' ); ?></p>
-					</div>
+					
 				</div>
 				<?php if($wl_theme_options['header_social_media_in_enabled']=='1') { ?>
 				<div class="col-md-6 col-sm-12">
@@ -95,6 +86,16 @@
 					  <span class="icon-bar"></span>
 					</button>
 				</div>
+				<div class="logo">
+					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<?php if($wl_theme_options['upload_image_logo']){ ?>
+						<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
+						<?php } else {
+							echo get_bloginfo('name');
+						} ?>
+					</a>
+				
+					</div>
 				<div id="menu" class="collapse navbar-collapse ">
 					<?php
 						wp_nav_menu( array(

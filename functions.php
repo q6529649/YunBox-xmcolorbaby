@@ -120,7 +120,7 @@
 	function kadima_widgets_init() {
     	/*sidebar*/
 		register_sidebar( array(
-			'name' => __( 'Sidebar '.$, 'kadima' ),
+			'name' => __( 'Sidebar ', 'kadima' ),
 			'id' => 'sidebar-primary',
 			'description' => __( 'The primary widget area', 'kadima' ),
 			'before_widget' => '<div class="kadima_sidebar_widget">',
