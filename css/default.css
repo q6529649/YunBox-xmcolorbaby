@@ -1119,3 +1119,29 @@ h1, h2, h3, h4, h5, h6 {
 .col-md-1{
 	margin-top: 95px;
 }
+.kadima_footer_social_div ul li a.twitter{
+    background: url(../images/facebook.png) no-repeat 0px 0px;
+    height: 35px;
+    display: block;
+    width: 35px;
+    background-size: cover;
+}
+.kadima_footer_social_div ul li a.facebook{
+    background: url(../images/twitter.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div ul li a.chrome{
+    background: url(../images/tumblr.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div ul li a.pinterest{
+    background: url(../images/linkedin.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div ul li a.linkedin{
+    background: url(../images/google+.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div ul li a.dribbble{
+    background: url(../images/icons.png) no-repeat -164px 0px;
+}

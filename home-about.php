@@ -1,11 +1,11 @@
 <?php $theme_options = kadima_get_options(); ?>
 <div class="content-grid">		
-	<div class="col-md-12 product-bj" style="padding-top: 20px;padding-bottom: 20px;background-color: #ececec;">
+	<div class="col-md-12 product-bj" style="padding-top: 20px;padding-bottom: 40px;background-color: #fff;">
 		<div class="container">
 			<h3 style="text-align: center;font-size: 55px;color: #ff7f02;font-weight: 100;margin-bottom: 20px;">
 				<?php echo $theme_options['custom_title_1']; ?>
 			</h3>
-			<h5>
+			<h5 style="text-align:center;">
 				<?php echo $theme_options['custom_title_sub_1']; ?>
 			</h5>
 			<div class="col-md-12 box_2" >					
@@ -24,16 +24,17 @@
 		</div>
 	</div>
 </div>
-<section style="background-color: #ececec;;">
+<section style="background-color: #ececec;">
+<div class="col-md-12" style="background-image:url(../wps/wp-content/themes/YunBox-xmcolorbaby/images/bjt.jpg);background-size:cover;background-position:top;color: #fff;padding-top:20px;padding-bottom:20px;">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12" style="padding-top:4em;padding-bottom:4em;">
+			<div class="col-md-12" >
 				<div class="row">
 					<?php for($i=1; $i<=4; $i++ ) { ?>
 					<?php if($i==1||$i==3) { ?>
-						<div class="col-md-6" style="border-right: 1px dashed #00a0e9; padding:20px;">
+						<div class="col-md-6" style="padding:0px;">
 					<?php } else { ?>
-						<div class="col-md-6" style="padding:20px;">	
+						<div class="col-md-6" style="padding:0px;">	
 					<?php } ?>												
 							<div>															
 								<?php if($theme_options['custom_img_1_'.$i] !='') { ?>
@@ -41,7 +42,7 @@
 										<div class="pull-right">
 											<div class="col-md-1"></div>
 											<i class="col-md-2">
-												<img src="<?php echo esc_url($theme_options['custom_img_1_'.$i]); ?>">
+												<img style="height: 75px;" src="<?php echo esc_url($theme_options['custom_img_1_'.$i]); ?>">
 											</i>
 											<div class="col-md-1"></div>
 										</div>
@@ -57,7 +58,7 @@
 										<div class="pull-left">
 											<div class="col-md-1"></div>
 											<i class="col-md-2">
-												<img src="<?php echo esc_url($theme_options['custom_img_1_'.$i]); ?>">
+												<img style="height: 75px;" src="<?php echo esc_url($theme_options['custom_img_1_'.$i]); ?>">
 											</i>
 											<div class="col-md-1"></div>
 										</div>
@@ -78,4 +79,5 @@
 			</div>
 		</div>
 	</div>
+</div>
 </section>

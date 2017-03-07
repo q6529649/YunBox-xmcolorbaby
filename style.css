@@ -117,8 +117,7 @@ p, .textwidget {
     background-image: linear-gradient(to bottom, transparent 50%, #4C66A4 50%);
 }
 .social li.facebook:hover {
-    background-position: 0 -100%;
-    background-color: #4C66A4;
+   opacity: 0.5;
 }
 
 /* dribble */
@@ -128,8 +127,7 @@ p, .textwidget {
     background-image: linear-gradient(to bottom, transparent 50%, #EA4C89 50%);
 }
 .social li.dribbble:hover {
-    background-position: 0 -100%;
-    background-color: #EA4C89;
+   opacity: 0.5;
 }
 
 /* dribble */
@@ -139,8 +137,7 @@ p, .textwidget {
     background-image: linear-gradient(to bottom, transparent 50%, #f60 50%);
 }
 .social li.twitter:hover {
-    background-position: 0 -100%;
-    background-color: #f60;
+   opacity: 0.5;
 }
 
 /* linkedin */
@@ -150,8 +147,7 @@ p, .textwidget {
     background-image: linear-gradient(to bottom, transparent 50%, #069 50%);
 }
 .social li.linkedin:hover {
-    background-position: 0 -100%;
-    background-color: #069;
+    opacity: 0.5;
 }
 
 /* youtube */
@@ -161,8 +157,7 @@ p, .textwidget {
     background-image: linear-gradient(to bottom, transparent 50%, #C92228 50%);
 }
 .social li.youtube:hover {
-    background-position: 0 -100%;
-    background-color: #C92228;
+    opacity: 0.5;
 }
 .kadima_heading_title {
     display: block;
