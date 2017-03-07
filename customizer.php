@@ -433,10 +433,29 @@ function kadima_customizer( $wp_customize ) {
 		$wp_customize->add_control(
 			'custom_title_'.$ci,
 			array(
-				'label'     => __( '自定义模块 '.$ci.' 名称', 'kadima' ),
+				'label'     => __( '自定义模块 '.$ci.' 标题', 'kadima' ),
 				'type'		=> 'text',
 				'section'   => 'custom_section_'.$ci,
 				'settings'  => 'kadima_options[custom_title_'.$ci.']'
+			)
+		);
+		$wp_customize->add_setting(
+		   'kadima_options[custom_title_sub_'.$ci.']',
+			array(
+				'default'			=> esc_attr($wl_theme_options['custom_title_sub_'.$ci]),
+				'type'				=> 'option',
+				'capability'		=> 'edit_theme_options',
+				'sanitize_callback'	=> 'kadima_sanitize_text',
+			)
+		);
+		
+		$wp_customize->add_control(
+			'custom_title_sub_'.$ci,
+			array(
+				'label'     => __( '自定义模块 '.$ci.' 副标题', 'kadima' ),
+				'type'		=> 'text',
+				'section'   => 'custom_section_'.$ci,
+				'settings'  => 'kadima_options[custom_title_sub_'.$ci.']'
 			)
 		);
 		$wp_customize->add_setting(
@@ -452,7 +471,7 @@ function kadima_customizer( $wp_customize ) {
 			'custom_desciption_'.$ci,
 			array(
 				'label'     => __( '自定义模块 '.$ci.' 描述', 'kadima' ),
-				'type'		=> 'text',
+				'type'		=> 'textarea',
 				'section'   => 'custom_section_'.$ci,
 				'settings'  => 'kadima_options[custom_desciption_'.$ci.']'
 			)
@@ -483,6 +502,15 @@ function kadima_customizer( $wp_customize ) {
 					'type'				=> 'option',
 					'capability'		=> 'edit_theme_options',
 					'sanitize_callback'	=> 'kadima_sanitize_text',
+				)
+			);
+			$wp_customize->add_setting(
+			   'kadima_options[custom_title_color_'.$ci.'_'.$i.']',
+				array(
+					'default'			=> esc_attr($wl_theme_options['custom_title_color_'.$ci.'_'.$i]),
+					'type'				=> 'option',
+					'capability'		=> 'edit_theme_options',
+					'sanitize_callback'	=> 'sanitize_hex_color',
 				)
 			);
 			$wp_customize->add_setting(
@@ -520,6 +548,17 @@ function kadima_customizer( $wp_customize ) {
 					'type'		=> 'text',
 					'section'   => 'custom_section_'.$ci,
 					'settings'  => 'kadima_options[custom_title_'.$ci.'_'.$i.']'
+				)
+			);
+			$wp_customize->add_control(
+				new WP_Customize_Color_Control( 
+					$wp_customize,
+					'custom_title_color_'.$ci.'_'.$i,
+					array(
+						'label'     => __( '自定义模块 '.$count12[$ci-1].' 标题 '.$count12[$i-1].' 颜色', 'kadima' ),
+						'section'   => 'custom_section_'.$ci,
+						'settings'  => 'kadima_options[custom_title_color_'.$ci.'_'.$i.']',
+					)
 				)
 			);
 			$wp_customize->add_control(

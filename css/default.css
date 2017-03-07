@@ -6,7 +6,13 @@
 
 .header_section {
     background-color: #31A3DD;
-    color: #0aa5eb;
+	background: -moz-linear-gradient(top, #4cc5fc 0%, #03a1ea 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4cc5fc), color-stop(100%,#03a1ea));
+    background: -webkit-linear-gradient(top, #4cc5fc 0%,#03a1ea 100%);
+    background: -o-linear-gradient(top, #4cc5fc 0%,#03a1ea 100%);
+    background: -ms-linear-gradient(top, #4cc5fc 0%,#03a1ea 100%);
+    background: linear-gradient(to bottom, #4cc5fc 0%,#03a1ea 100%);
+    color: #fff;
 }
 
 /** navbar menus ***/
@@ -199,8 +205,6 @@
 
 .kadima_blog_thumb_wrapper {
     background: #fff;
-    border-bottom: 5px solid #31A3DD;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .7);
 }
 .kadima_blog_thumb_wrapper h2 a {
     color: #31A3DD;
@@ -446,7 +450,7 @@
 ***************************************************************************************/
 
 .kadima_footer_area {
-    background: #0aa5eb;
+    background: #00a0e9;
     border-top: 0px solid #6B6B6B;
 	border-top: 1px solid #fff;
 }
@@ -1114,4 +1118,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 .col-md-1{
 	margin-top: 95px;
+}
+.kadima_footer_social_div ul li a.twitter{
+    background: url(../images/facebook.png) no-repeat 0px 0px;
+    height: 35px;
+    display: block;
+    width: 35px;
+    background-size: cover;
+}
+.kadima_footer_social_div ul li a.facebook{
+    background: url(../images/twitter.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div ul li a.chrome{
+    background: url(../images/tumblr.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div ul li a.pinterest{
+    background: url(../images/linkedin.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div ul li a.linkedin{
+    background: url(../images/google+.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div ul li a.dribbble{
+    background: url(../images/icons.png) no-repeat -164px 0px;
 }

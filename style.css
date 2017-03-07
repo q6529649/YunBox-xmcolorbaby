@@ -91,25 +91,18 @@ p, .textwidget {
 }
 .social {
     display: block;
-    text-align: right;
+    text-align: center;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;	
+    margin-bottom: 0px;
 }
 .social li {
     font-size: 18px;
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
     display: inline-block;
     height: 35px;
     margin-right: 5px;
     width: 35px;
     text-align: center;
-    -webkit-transition: background .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out;
-    -o-transition: background .5s ease-in-out;
-    -ms-transition: background .5s ease-in-out;
-    transition: background .5s ease-in-out;
-    border: 2px solid #ffffff;
     cursor: pointer;
 }
 .social i {
@@ -124,8 +117,7 @@ p, .textwidget {
     background-image: linear-gradient(to bottom, transparent 50%, #4C66A4 50%);
 }
 .social li.facebook:hover {
-    background-position: 0 -100%;
-    background-color: #4C66A4;
+   opacity: 0.5;
 }
 
 /* dribble */
@@ -135,8 +127,7 @@ p, .textwidget {
     background-image: linear-gradient(to bottom, transparent 50%, #EA4C89 50%);
 }
 .social li.dribbble:hover {
-    background-position: 0 -100%;
-    background-color: #EA4C89;
+   opacity: 0.5;
 }
 
 /* dribble */
@@ -146,8 +137,7 @@ p, .textwidget {
     background-image: linear-gradient(to bottom, transparent 50%, #f60 50%);
 }
 .social li.twitter:hover {
-    background-position: 0 -100%;
-    background-color: #f60;
+   opacity: 0.5;
 }
 
 /* linkedin */
@@ -157,8 +147,7 @@ p, .textwidget {
     background-image: linear-gradient(to bottom, transparent 50%, #069 50%);
 }
 .social li.linkedin:hover {
-    background-position: 0 -100%;
-    background-color: #069;
+    opacity: 0.5;
 }
 
 /* youtube */
@@ -168,8 +157,7 @@ p, .textwidget {
     background-image: linear-gradient(to bottom, transparent 50%, #C92228 50%);
 }
 .social li.youtube:hover {
-    background-position: 0 -100%;
-    background-color: #C92228;
+    opacity: 0.5;
 }
 .kadima_heading_title {
     display: block;
@@ -848,8 +836,8 @@ p, .textwidget {
 /** wrapper for front page **/
 
 .kadima_blog_area {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .kadima_blog_wrapper {
     margin-bottom: 90px;
@@ -1818,7 +1806,12 @@ p, .textwidget {
     color: #ffffff;
 }
 .kadima_footer_widget_area {
-    background: #0aa5eb;;
+	background: -moz-linear-gradient(top, #4cc5fc 0%, #03a1ea 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4cc5fc), color-stop(100%,#03a1ea));
+    background: -webkit-linear-gradient(top, #4cc5fc 0%,#03a1ea 100%);
+    background: -o-linear-gradient(top, #4cc5fc 0%,#03a1ea 100%);
+    background: -ms-linear-gradient(top, #4cc5fc 0%,#03a1ea 100%);
+    background: linear-gradient(to bottom, #4cc5fc 0%,#03a1ea 100%);
 }
 .kadima-footer-separator {
     background-color: #ffffff;
@@ -1911,12 +1904,6 @@ p, .textwidget {
 }
 .kadima_footer_area p a:hover {
     color: #ffffff;
-}
-.kadima_footer_copyright_info {
-    float: left;
-}
-.kadima_footer_social_div {
-    float: right;
 }
 
 /* Scroll To Top ----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
