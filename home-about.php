@@ -25,7 +25,7 @@
 	</div>
 </div>
 <section style="background-color: #ececec;">
-<div class="col-md-12" style="background-image:url(../wps/wp-content/themes/YunBox-xmcolorbaby/images/bjt.jpg);background-size:cover;background-position:top;color: #fff;padding-top:20px;padding-bottom:20px;">
+<div class="col-md-12" style="background-image:url(../wp-content/themes/kadima/images/bjt.jpg);background-size:cover;background-position:top;color: #fff;padding-top:20px;padding-bottom:20px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12" >
