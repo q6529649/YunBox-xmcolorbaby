@@ -42,7 +42,7 @@
 										<div class="pull-right">
 											<div class="col-md-1"></div>
 											<i class="col-md-2">
-												<img style="height: 75px;" src="<?php echo esc_url($theme_options['custom_img_1_'.$i]); ?>">
+												<img style="height: 75px;margin-top: 10px" src="<?php echo esc_url($theme_options['custom_img_1_'.$i]); ?>">
 											</i>
 											<div class="col-md-1"></div>
 										</div>
@@ -58,7 +58,7 @@
 										<div class="pull-left">
 											<div class="col-md-1"></div>
 											<i class="col-md-2">
-												<img style="height: 75px;" src="<?php echo esc_url($theme_options['custom_img_1_'.$i]); ?>">
+												<img style="height: 75px;margin-top: 10px" src="<?php echo esc_url($theme_options['custom_img_1_'.$i]); ?>">
 											</i>
 											<div class="col-md-1"></div>
 										</div>
