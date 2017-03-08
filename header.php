@@ -41,31 +41,31 @@
 		<div class="container" >
 			<!-- Logo & Contact Info -->
 			<div class="row ">
-				<div class="col-md-6 col-sm-12 wl_rtl" >
-					
+				<div class="col-md-7 col-sm-12 wl_rtl" style="text-align: right;padding-top:5px;" >
+					<i class="lnr2"></i><span style="font-weight: bold;margin-left:10px;">SHOP ONLINE</span>
 				</div>
 				<?php if($wl_theme_options['header_social_media_in_enabled']=='1') { ?>
-				<div class="col-md-6 col-sm-12">
+				<div class="col-md-5 col-sm-12 kadima_footer_social_div2">
 				<?php if($wl_theme_options['email_id'] || $wl_theme_options['phone_no'] !='') { ?>
 				<ul class="head-contact-info">
 						<?php if($wl_theme_options['email_id'] !='') { ?><li><i class="fa fa-envelope"></i><a href="mailto:<?php echo $wl_theme_options['email_id']; ?>"><?php echo esc_attr($wl_theme_options['email_id']); ?></a></li><?php } ?>
 						<?php if($wl_theme_options['phone_no'] !='') { ?><li><i class="fa fa-phone"></i><a href="tel:<?php echo $wl_theme_options['phone_no']; ?>"><?php echo esc_attr($wl_theme_options['phone_no']); ?></a></li><?php } ?>
 				</ul>
 				<?php } ?>
-					<ul class="social">
+					<ul class="social" style="text-align: right;">
 					<?php if($wl_theme_options['fb_link']!='') { ?>
-					   <li class="facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><a  href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"><i class="fa fa-facebook"></i></a></li>
-					<?php } if($wl_theme_options['twitter_link']!='') { ?>
-					<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><a href="<?php echo esc_url($wl_theme_options['twitter_link']); ?>"><i class="fa fa-twitter"></i></a></li>
-					<?php } if($wl_theme_options['linkedin_link']!='') { ?>
-					<li class="linkedin" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><a href="<?php echo esc_url($wl_theme_options['linkedin_link']); ?>"><i class="fa fa-linkedin"></i></a></li>
-					<?php } if($wl_theme_options['youtube_link']!='') { ?>
-					<li class="youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"><a href="<?php echo esc_url($wl_theme_options['youtube_link']) ; ?>"><i class="fa fa-youtube"></i></a></li>
-	                <?php } if($wl_theme_options['gplus']!='') { ?>
-					<li class="twitter" data-toggle="tooltip" data-placement="bottom" title="gplus"><a href="<?php echo esc_url($wl_theme_options['gplus']) ; ?>"><i class="fa fa-google-plus"></i></a></li>
-	                <?php } if($wl_theme_options['instagram']!='') { ?>
-					<li class="facebook" data-toggle="tooltip" data-placement="bottom" title="instagram"><a href="<?php echo esc_url($wl_theme_options['instagram']) ; ?>"><i class="fa fa-instagram"></i></a></li>
-	                <?php } ?>
+							 <li class="twitter" title="Facebook"><a class="twitter" href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"></a></li>
+						<?php } if($wl_theme_options['twitter_link']!='') { ?>
+							<li class="twitter facebook" title="Twitter"><a class="twitter facebook" href="<?php echo esc_url($wl_theme_options['twitter_link']) ; ?>"></a></li>
+						<?php } if($wl_theme_options['linkedin_link']!='') { ?>
+							<li class="twitter chrome" title="Linkedin"><a class="twitter pinterest" href="<?php echo esc_url($wl_theme_options['linkedin_link']) ; ?>"></a></li>
+						<?php } if($wl_theme_options['youtube_link']!='') { ?>
+							<li class="twitter pinterest" title="Youtube"><a class="twitter pinterest" href="<?php echo esc_url($wl_theme_options['youtube_link']) ; ?>"></a></li>
+						<?php } if($wl_theme_options['gplus']!='') { ?>
+							<li class="twitter linkedin" title="gplus"><a class="twitter linkedin" href="<?php echo esc_url($wl_theme_options['gplus']) ; ?>"></a></li>
+						<?php } if($wl_theme_options['instagram']!='') { ?>
+							<li class="instagram" title="instagram"><a href="<?php echo esc_url($wl_theme_options['instagram']) ; ?>"></a></li>
+						<?php } ?>
 					</ul>
 				</div>
 				<?php } ?>

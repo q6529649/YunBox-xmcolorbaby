@@ -1145,6 +1145,54 @@ h1, h2, h3, h4, h5, h6 {
 .kadima_footer_social_div ul li a.dribbble{
     background: url(../images/icons.png) no-repeat -164px 0px;
 }
+
+
+
+.kadima_footer_social_div2 .social li {
+    font-size: 18px;
+    display: inline-block;
+    height: 25px;
+    margin-right: 5px;
+    width: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+.kadima_footer_social_div2 ul li a.twitter{
+    background: url(../images/facebook.png) no-repeat 0px 0px;
+    height: 25px;
+    display: block;
+    width: 25px;
+    background-size: cover;
+}
+.kadima_footer_social_div2 ul li a.facebook{
+    background: url(../images/twitter.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div2 ul li a.chrome{
+    background: url(../images/tumblr.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div2 ul li a.pinterest{
+    background: url(../images/linkedin.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div2 ul li a.linkedin{
+    background: url(../images/google+.png) no-repeat -0px 0px;
+    background-size: cover;
+}
+.kadima_footer_social_div2 ul li a.dribbble{
+    background: url(../images/icons.png) no-repeat -164px 0px;
+}
+.wl_rtl .lnr2{
+	width: 25px;
+    height: 25px;
+    background: url("../images/shopping.png") no-repeat 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+	margin-right:5px;
+    
+}
 #newsCarousel .carousel-control.right {
     right: 0;
     left: auto;
