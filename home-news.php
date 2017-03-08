@@ -2,7 +2,7 @@
 <?php $wl_theme_options = kadima_get_options();?>
 	<div class="specialty">
 		<div class="container">
-			<div class="col-md-6">				
+			<div class="col-md-6" style="padding-top:40px;padding-bottom:20px;">				
 				<div id="newsCarousel" class="carousel slide" data-ride="carousel">
 					<div class="carousel-inner">
 					<?php
@@ -39,7 +39,7 @@
 					<a class="right carousel-control" href="#newsCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6" style="padding-top:40px;padding-bottom:20px;">
 				<div id="kadima_blog_section">
 					<ul>
 					<?php
@@ -52,7 +52,7 @@
 						<li>
 							<div class="row">
 								<div class="col-md-8">
-									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+									<i class="lnr"></i><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								</div>
 								<div class="col-md-4">
 									<i class="fa fa-clock-o"></i>
