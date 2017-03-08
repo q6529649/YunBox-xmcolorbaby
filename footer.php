@@ -22,7 +22,7 @@
 			</div>
 			<div class="col-md-7" style="padding-top:20px;">
 				<div style="margin-bottom: 20px;">	
-					<span style="color:#fff;">f you have any questions or comments, please contact us using the form below.</span>
+					<span style="color:#fff;">If you have any questions or comments, please contact us using the form below.</span>
 						<input id="yourname" class="form-control" style="height: 34px; background-color: #fff;margin-bottom: 10px;margin-top: 20px;" type="email" placeholder="Name" />
 						<input id="yourname" class="form-control" style="height: 34px; background-color: #fff;margin-bottom: 10px;" type="email" placeholder="Email" />
 						<textarea id="yourmessage" name="yourmessage" class="form-control" rows="5" placeholder="Message" value=""></textarea>
