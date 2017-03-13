@@ -1,5 +1,5 @@
 /*******
-Theme Name: Kadima
+Theme Name: Kadima-xmcolorbaby
 Theme URI:http://28story.com
 Author: JamesLiao
 Author URI: http://28story.com/
@@ -1016,7 +1016,7 @@ p, .textwidget {
     float: none;
 }
 .kadima_blog_full .kadima_blog_thumb_wrapper_showcase {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 /* .kadima_blog_full img{
@@ -1032,9 +1032,12 @@ p, .textwidget {
 }
 .blog-date-left li {
     width: 100px;
-    height: 100px;
+    height:100%;
     text-align: center;
     transition: all 0.4s ease 0s;
+}
+.kadima_post_date {
+    background: #13A9EE !important;
 }
 .blog-date-right {
     list-style: none;
@@ -1049,10 +1052,6 @@ p, .textwidget {
     transition: all 0.4s ease 0s;
 }
 .kadima_post_date {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
     transition: all 0.4s ease 0s;
 }
 .kadima_post_date span.date {
@@ -1106,7 +1105,7 @@ p, .textwidget {
 }
 .post-content-wrap {
     float: left;
-    width: 86%;
+    width: 100%;
 }
 
 /*
@@ -1136,7 +1135,7 @@ p, .textwidget {
     color: #777777;
 }
 .kadima_fuul_blog_detail_padding {
-    padding-left: 20px;
+ 
     float: left;
     width: 100%;
 }
@@ -1155,11 +1154,9 @@ p, .textwidget {
     font-size: 16px;
     line-height: 26px;
     margin: 0 0 20px;
+	color: #333;
 }
-.blog-sep.header-sep {
-    margin-top: 40px;
-    margin-bottom: 50px;
-}
+
 .header-sep {
     border: 0;
     height: 4px;
@@ -2229,6 +2226,9 @@ table td {
     color: #31A3DD;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.kadima_fuul_blog_detail_padding h1 a{
+	color:#333;
 }
 #wblizar_nav span {
     padding-top: 20px;

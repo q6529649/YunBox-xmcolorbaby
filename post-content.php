@@ -7,16 +7,12 @@
 		<span class="date"><?php echo get_the_date(); ?></span>
 		<?php endif; ?>
 		</li>
-		<li class="kadima_post_author"><?php echo get_avatar(get_the_author_meta( 'ID' ),96); ?></li>
-		<li class="kadima_blog_comment"><i class="fa fa-comments-o"></i><h6><?php comments_popup_link( '0', '1', '%', '', '-'); ?></h6></li>
 	</ul>
-	<div class="post-content-wrap">
+	<div class="post-content-wrap" style="float: left;width: 86%;">
 		<?php if(has_post_thumbnail()): 
 		$img = array('class' => 'kadima_img_responsive'); ?>
 		<div class="kadima_blog_thumb_wrapper_showcase">						
-			<div class="kadima_blog-img">
-			<?php the_post_thumbnail('blog_2c_thumb',$img); ?>						
-			</div>
+			
 			<?php if (is_home()) : ?>
 			<div class="kadima_blog_thumb_wrapper_showcase_overlay">
 			<div class="kadima_blog_thumb_wrapper_showcase_overlay_inner ">
@@ -31,17 +27,7 @@
 		<div class="kadima_fuul_blog_detail_padding">
 		<h2><?php if(!is_single()) {?><a href="<?php the_permalink(); ?>"><?php } ?><?php the_title(); ?></a></h2>
 		<div class="row">
-		<div class="col-md-6 col-sm-3">
-		<?php if(get_the_tag_list() != '') { ?>
-		<p class="kadima_tags"><?php the_tags( __('Tags : ','kadima'), '', '<br />'); ?></p>
-		<?php } ?>
-		</div>
-		<div class="col-md-6 col-sm-3">
-		<?php if(get_the_category_list() != '') { ?>
-		<p class="kadima_cats"><?php echo __("Category : ",'kadima');
-		the_category(' , '); ?></p>
-		<?php } ?>
-		</div>
+	
 		</div>
 		<?php the_content( __( 'Read More' , 'kadima' ) ); 
 		$defaults = array(
