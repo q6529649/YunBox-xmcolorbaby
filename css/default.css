@@ -23,6 +23,9 @@
 }
 .navbar-default .navbar-nav> .active> a, .navbar-default .navbar-nav> .active> a:hover, .navbar-default .navbar-nav> .active> a:focus, .dropdown-menu .active a {
     background-color: #13A9EE;
+	font-family: 'AVGARDD' !important;
+	font-size: 18px !important;
+	font-weight: bold !important;
 }
 .collapse ul.nav li.current-menu-parent .dropdown-toggle, .collapse ul.nav li.current-menu-item .dropdown-toggle, .navbar-default .navbar-collapse ul.nav li.current-menu-parent .dropdown-toggle, .navbar-default .navbar-collapse ul.nav li.current-menu-item .dropdown-toggle .collapse ul.nav li.current_page_ancestor .dropdown-toggle, .collapse ul.nav li.current_page_ancestor .dropdown-toggle, .navbar-default .navbar-collapse ul.nav li.current_page_ancestor .dropdown-toggle, .navbar-default .navbar-collapse ul.nav li.current_page_ancestor .dropdown-toggle {
     background-color: #31A3DD;
@@ -34,7 +37,7 @@
     background-color: #31A3DD;
 }
 .navbar-default .navbar-nav> li> a:hover, .navbar-default .navbar-nav> li> a:focus {
-    background-color: #31A3DD;
+    background-color: #13A9EE;
 }
 .dropdown-menu {
     background-color: rgba(49, 162, 221, 0.9);
@@ -297,12 +300,12 @@
 /*** blog sidebar css **/
 
 .kadima_recent_widget_post h3 a {
-    color: #31A3DD;
+    color: #13A9EE;
 }
 .kadima_sidebar_widget {
-    border-left: 3px solid #31A3DD;
-    border-right: 3px solid #31A3DD;
-    border-bottom: 3px solid #31A3DD;
+    border-left: 3px solid #13A9EE;
+    border-right: 3px solid #13A9EE;
+    border-bottom: 3px solid #13A9EE;
     background-color: #ffffff;
 }
 .kadima_sidebar_widget_title {
@@ -486,9 +489,7 @@
 
 /*** breadcum style css **/
 
-.breadcrumb li a {
-    color: #31A3DD !important;
-}
+
 
 /** progress bar or nav button css */
 
@@ -632,7 +633,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 7px;
 }
 .navbar-default .navbar-nav> li> a {
-    color: #00a0e9;
+    color: #13A9EE;
     border-radius: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -850,13 +851,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .kadima_header_breadcrum_title {
     margin-bottom: 70px;
-    background: #edf0f2;
+    background: #13A9EE;
     opacity: 1;
     padding-top: 8px;
     padding-bottom: 8px;
 }
 .kadima_header_breadcrum_title h1 {
     color: #777777;
+	font-size: 24px;
+	color:#fff;
 }
 .breadcrumb {
     font-size: 17px;
@@ -873,15 +876,24 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
 }
 .breadcrumb li a {
-    color: #31A3DD;
+    color: #fff;
+}
+.breadcrumb li  {
+    color: #fff;
 }
 .breadcrumb> .active {
     color: #000;
 }
 .breadcrumb> li+ li:before {
     padding: 0 5px;
-    color: #000;
+    color: #fff;
     content: "/\00a0";
+}
+.kadima_header_breadcrum_title .row .col-md-12 h1{
+	margin-top: 5px;
+}
+.kadima_header_breadcrum_title .row .col-md-12 ul{
+	margin-bottom: 5px;
 }
 
 /** about us css ********/
