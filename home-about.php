@@ -2,10 +2,10 @@
 <div class="content-grid">		
 	<div class="col-md-12 product-bj" style="padding-top: 20px;padding-bottom: 40px;background-color: #fff;">
 		<div class="container">
-			<h3 style="text-align: center;font-size: 55px;color: #ff7f02;font-weight: 100;margin-bottom: 20px;">
+			<h3 class="fadeInLeft animated animated" style="text-align: center;font-size: 55px;color: #ff7f02;font-weight: 100;margin-bottom: 20px;visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
 				<?php echo $theme_options['custom_title_1']; ?>
 			</h3>
-			<h5 style="text-align:center;">
+			<h5   style="text-align:center;">
 				<?php echo $theme_options['custom_title_sub_1']; ?>
 			</h5>
 			<div class="col-md-12 box_2" >					
