@@ -18,7 +18,7 @@
 /** navbar menus ***/
 
 .navigation_menu {
-    background-color: #fff;
+
     border-top: 2px solid #31A3DD;
 }
 .navbar-default .navbar-nav> .active> a, .navbar-default .navbar-nav> .active> a:hover, .navbar-default .navbar-nav> .active> a:focus, .dropdown-menu .active a {
@@ -37,7 +37,28 @@
     background-color: #31A3DD;
 }
 .navbar-default .navbar-nav> li> a:hover, .navbar-default .navbar-nav> li> a:focus {
-    background-color: #13A9EE;
+   /* background-color: #13A9EE;*/
+	
+}
+.navbar-default .navbar-nav> li> a{
+	transition:height 1s linear;
+	position:relative;
+}
+.navbar-default .navbar-nav> li> a:after{
+	display:block;
+	content:'';
+	clear:both;
+	width:100%;
+	height:0;
+	left:0;
+	top:0;
+	background-color:#13A9EE;
+	transition:height .2s linear;
+	position:absolute;
+	z-index:-1;
+}
+.navbar-default .navbar-nav> li> a:hover:after{
+	height:80px;
 }
 .dropdown-menu {
     background-color: rgba(49, 162, 221, 0.9);
@@ -282,10 +303,10 @@
 .kadima_post_date {
     background: #fff;
     color: #fff;
-	
-    padding-left: 5px;
-    padding-right: 5px;
-   
+	padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
 .kadima_blog_comment:hover i, .kadima_blog_comment:hover h6 {
     color: #31A3DD;
@@ -601,6 +622,18 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     position: relative;
 }
+.navigation_menu:after{
+	display:block;
+	content:'';
+	clear:both;
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	z-index:-2;
+	background-color:#FFF;
+	}
 .navbar-default {
     background-color: transparent;
     border: 0;
@@ -609,9 +642,6 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
-    -webkit-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-    -moz-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-    box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
     color: #fff;
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: normal;
@@ -635,8 +665,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default .navbar-nav> li> a {
     color: #13A9EE;
     border-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
     text-transform: uppercase;
@@ -648,9 +678,6 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
-    -webkit-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-    -moz-box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
-    box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
     color: #fff;
     font-family: 'AVGARDD', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -772,8 +799,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-collapse {
     max-height: 340px;
     padding-right: 15px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     overflow-x: visible;
     -webkit-overflow-scrolling: touch;
     border-top: 0px solid transparent;
@@ -1229,7 +1256,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .col-md-6 #kadima_blog_section li{
 	list-style-type:none;
-	line-height: 2.7;
+	
 }
 .col-md-6 #kadima_blog_section a{
 	color:#666;
