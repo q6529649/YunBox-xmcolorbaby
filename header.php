@@ -11,16 +11,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="<?php bloginfo('charset'); ?>" />
-	<?php $wl_theme_options = kadima_get_options(); ?>
-	<?php if($wl_theme_options['upload_image_favicon']!=''){ ?>
-	<link rel="shortcut icon" href="<?php  echo esc_url($wl_theme_options['upload_image_favicon']); ?>" />
-	<?php } ?>
+	<?php $theme_options = kadima_get_options(); ?>
+	<?php if($theme_options['upload_image_favicon']!=''){ ?>
+	<link rel="shortcut icon" href="<?php  echo esc_url($theme_options['upload_image_favicon']); ?>" />
+	<?php } ?>	
 	<?php
 		if (is_home()) {
 			echo '<meta http-equiv="x-dns-prefetch-control" content="on" />
 			<link rel="dns-prefetch" href="//cdn.yunclever.com">
 			<link rel="dns-prefetch" href="//cdn.bootcss.com">
-			<link rel="dns-prefetch" href="//static.addtoany.com">';
+			<link rel="dns-prefetch" href="//static.addtoany.com">
+			<link rel="dns-prefetch" href="//use.typekit.net">';
 		} elseif (isset($_COOKIE['yc_visit_cookie'])) {
 			echo '';
 		}
@@ -28,54 +29,18 @@
 			echo '<meta http-equiv="x-dns-prefetch-control" content="on" />
 			<link rel="dns-prefetch" href="//cdn.yunclever.com">
 			<link rel="dns-prefetch" href="//cdn.bootcss.com">
-			<link rel="dns-prefetch" href="//static.addtoany.com">';
+			<link rel="dns-prefetch" href="//static.addtoany.com">
+			<link rel="dns-prefetch" href="//use.typekit.net">';
 		}
-	?>
+	?>	
 	<?php wp_head(); ?>
+	<script src="https://use.typekit.net/nda5ask.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body <?php body_class(); ?>>
 
 <div>
-	<!-- Header Section -->
-	<div class="header_section" >
-		<div class="container" >
-			<!-- Logo & Contact Info -->
-			<div class="row ">
-				<div class="col-md-7 col-sm-12 wl_rtl" style="text-align: right;padding-top:5px;" >
-					<i class="lnr2"></i><span style="font-weight: bold;margin-left:10px;">SHOP ONLINE</span>
-				</div>
-				<?php if($wl_theme_options['header_social_media_in_enabled']=='1') { ?>
-				<div class="col-md-5 col-sm-12 kadima_footer_social_div2">
-				<?php if($wl_theme_options['email_id'] || $wl_theme_options['phone_no'] !='') { ?>
-				<ul class="head-contact-info">
-						<?php if($wl_theme_options['email_id'] !='') { ?><li><i class="fa fa-envelope"></i><a href="mailto:<?php echo $wl_theme_options['email_id']; ?>"><?php echo esc_attr($wl_theme_options['email_id']); ?></a></li><?php } ?>
-						<?php if($wl_theme_options['phone_no'] !='') { ?><li><i class="fa fa-phone"></i><a href="tel:<?php echo $wl_theme_options['phone_no']; ?>"><?php echo esc_attr($wl_theme_options['phone_no']); ?></a></li><?php } ?>
-				</ul>
-				<?php } ?>
-					<ul class="social" style="text-align: right;">
-					<?php if($wl_theme_options['fb_link']!='') { ?>
-							 <li class="twitter" title="Facebook"><a class="twitter" href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"></a></li>
-						<?php } if($wl_theme_options['twitter_link']!='') { ?>
-							<li class="twitter facebook" title="Twitter"><a class="twitter facebook" href="<?php echo esc_url($wl_theme_options['twitter_link']) ; ?>"></a></li>
-						<?php } if($wl_theme_options['linkedin_link']!='') { ?>
-							<li class="twitter chrome" title="Linkedin"><a class="twitter pinterest" href="<?php echo esc_url($wl_theme_options['linkedin_link']) ; ?>"></a></li>
-						<?php } if($wl_theme_options['youtube_link']!='') { ?>
-							<li class="twitter pinterest" title="Youtube"><a class="twitter pinterest" href="<?php echo esc_url($wl_theme_options['youtube_link']) ; ?>"></a></li>
-						<?php } if($wl_theme_options['gplus']!='') { ?>
-							<li class="twitter linkedin" title="gplus"><a class="twitter linkedin" href="<?php echo esc_url($wl_theme_options['gplus']) ; ?>"></a></li>
-						<?php } if($wl_theme_options['instagram']!='') { ?>
-							<li class="instagram" title="instagram"><a href="<?php echo esc_url($wl_theme_options['instagram']) ; ?>"></a></li>
-						<?php } ?>
-					</ul>
-				</div>
-				<?php } ?>
-			</div>
-			<!-- /Logo & Contact Info -->
-		</div>
-	</div>
-	<!-- /Header Section -->
-	<!-- Navigation  menus -->
-	<div class="navigation_menu "  data-spy="affix" data-offset-top="95" id="kadima_nav_top">
+	<div class="navigation_menu"  data-spy="affix" data-offset-top="95" id="kadima_nav_top">
 		<div class="container navbar-container" >
 			<nav class="navbar navbar-default " role="navigation">
 				<div class="navbar-header">
@@ -88,24 +53,26 @@
 				</div>
 				<div class="logo">
 					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<?php if($wl_theme_options['upload_image_logo']){ ?>
-						<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_logo']; ?>" style="height:<?php if($wl_theme_options['height']!='') { echo $wl_theme_options['height']; }  else { "80"; } ?>px; width:<?php if($wl_theme_options['width']!='') { echo $wl_theme_options['width']; }  else { "200"; } ?>px;" />
+					<?php if($theme_options['upload_image_logo']){ ?>
+						<img class="img-responsive" src="<?php echo $theme_options['upload_image_logo']; ?>" style="height:<?php if($theme_options['height']!='') { echo $theme_options['height']; }  else { "80"; } ?>px; width:<?php if($theme_options['width']!='') { echo $theme_options['width']; }  else { "200"; } ?>px;" />
 						<?php } else {
 							echo get_bloginfo('name');
 						} ?>
 					</a>
 				
 					</div>
-				<div id="menu" class="collapse navbar-collapse ">
+				<div id="menu" class="collapse navbar-collapse" style="margin-top:1vh;">
 					<?php
 						wp_nav_menu( array(
 							'theme_location' => 'primary',
-							'menu_class' => 'nav navbar-nav',
-							'fallback_cb' => 'kadima_fallback_page_menu',
+							'menu_class' => 'nav navbar-nav cl-effect-14',
 							'walker' => new kadima_nav_walker(),
 							)
 						);
 					?>
+					<div style="margin-top:1vh;">
+						<a href="//xmcolorbaby.site.yunclever.com/shop" target="_blank"><i class="shopimg"></i></a>
+					</div>
 					<div id="google_translate_element"></div>
 				</div>
 			</nav>

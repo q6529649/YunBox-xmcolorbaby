@@ -1,34 +1,31 @@
 <?php $theme_options = kadima_get_options(); ?>
-<div class="content-grid">		
-	<div class="col-md-12 product-bj" style="padding-top: 20px;padding-bottom: 40px;background-color: #fff;">
-		<div class="container">
-			<h3 class="fadeInLeft animated animated" style="text-align: center;font-size: 55px;color: #ff7f02;font-weight: 100;margin-bottom: 20px;visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
-				<?php echo $theme_options['custom_title_1']; ?>
-			</h3>
-			<h5   style="text-align:center;">
-				<?php echo $theme_options['custom_title_sub_1']; ?>
-			</h5>
-			<div class="col-md-12 box_2" >					
-				<div>
-					<div class="most-1">
-						<h6 style="text-align:center;margin-bottom: 30px;font-size: 16px;padding:0 45px;">
-							<?php echo esc_attr($theme_options['custom_desciption_1']); ?>
-						</h6>
-					</div>
+<div class="index_about_area">
+	<div class="container">
+		<h3 class="fadeInLeft animated" style="text-align: center;font-size: 55px;color: #ff7f02;font-weight: 600;margin-bottom: 20px;animation-delay: 0.5s;">
+			<?php echo $theme_options['custom_title_1']; ?>
+		</h3>
+		<h5 style="text-align:center;font-size: 1.2em;">
+			<?php echo $theme_options['custom_title_sub_1']; ?>
+		</h5>
+		<div class="col-md-12 box_2" >					
+			<div>
+				<div class="most-1">
+					<h6 style="margin-bottom: 30px;padding:0 45px; font-size: 1.3em;font-weight: 400;">
+						<?php echo esc_attr($theme_options['custom_desciption_1']); ?>
+					</h6>
 				</div>
 			</div>
-			<p class="p1" style="text-align:center;">
-				<img src="//xmcolorbaby.site.yunclever.com/wp-content/themes/kadima/images/sp.jpg">
-				<!--img class=" zoom-img" src="<?php echo esc_url($theme_options['port_img_'.$i]); ?>" alt="<?php echo esc_attr($theme_options['port_title_'.$i]); ?>"-->
-			</p>
 		</div>
+		<p class="p1" style="text-align:center;">
+			<img src="//xmcolorbaby.site.yunclever.com/wp-content/themes/kadima/images/imac-bg.png">
+		</p>
 	</div>
 </div>
-<section style="background-color: #ececec;">
-<div class="col-md-12" style="background-image:url(../wp-content/themes/kadima/images/bjt.jpg);background-size:cover;background-position:top;color: #fff;padding-top:20px;padding-bottom:20px;">
+<!-- style="background-image:url(//xmcolorbaby.site.yunclever.com/wp-content/themes/kadima/images/bjt.jpg);background-size:cover;background-position:top;color: #ffffff;padding-top:20px;padding-bottom:20px;" --->
+<div style="background-color:#f19f0f;color: #ffffff;padding-top:3.5em;padding-bottom:3.5em;">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12" >
+			<div class="col-md-12">
 				<div class="row">
 					<?php for($i=1; $i<=4; $i++ ) { ?>
 					<?php if($i==1||$i==3) { ?>
@@ -47,7 +44,7 @@
 											<div class="col-md-1"></div>
 										</div>
 										<div class="col-md-8 text-right">
-											<h3 style="font-size: 18px; font-weight: bold; color:<?php echo esc_attr($theme_options['custom_title_color_1_'.$i]); ?>;">
+											<h3 style="font-size: 1.8em; font-weight: 500; color:<?php echo esc_attr($theme_options['custom_title_color_1_'.$i]); ?>;">
 												<?php echo esc_attr($theme_options['custom_title_1_'.$i]); ?>
 											</h3>
 											<p style="font-size: 16px">
@@ -63,7 +60,7 @@
 											<div class="col-md-1"></div>
 										</div>
 										<div class="col-md-8 pull-right text-left">
-											<h3 style="font-size: 18px; font-weight: bold; color:<?php echo $theme_options['custom_title_color_1_'.$i]; ?>;">
+											<h3 style="font-size: 1.8em; font-weight: 500; color:<?php echo $theme_options['custom_title_color_1_'.$i]; ?>;">
 												<?php echo esc_attr($theme_options['custom_title_1_'.$i]); ?>
 											</h3>
 											<p style="font-size: 16px">
@@ -80,4 +77,3 @@
 		</div>
 	</div>
 </div>
-</section>

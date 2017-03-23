@@ -8,12 +8,12 @@
         wp_enqueue_style('animations', '//statics.yunclever.com/animate/3.5.1/animate.css');
         //wp_enqueue_style('theme-animtae', get_template_directory_uri() . '/css/theme-animtae.css');
         wp_enqueue_style('font-awesome', '//statics.yunclever.com/font-awesome/4.7.0/css/font-awesome.min.css');
-        wp_enqueue_style('video-js-css', '//statics.yunclever.com/videojs/5.17.0/video-js.min.css');
+        //wp_enqueue_style('video-js-css', '//statics.yunclever.com/videojs/5.17.0/video-js.min.css');
         wp_enqueue_style('font-family', get_template_directory_uri() . '/css/font-family.css');
         wp_enqueue_style('default', get_template_directory_uri() . '/css/default.css');
         wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
         wp_enqueue_script('bootstrap-js', '//statics.yunclever.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'));
-        wp_enqueue_script('video-js', '//statics.yunclever.com/videojs/5.17.0/video.min.js', array('jquery'));
+        //wp_enqueue_script('video-js', '//statics.yunclever.com/videojs/5.17.0/video.min.js', array('jquery'));
         wp_enqueue_script('logjs', '//statics.yunclever.com/log/0.3.0/log.min.js', array('jquery'));
         wp_enqueue_script('kadima-theme-script', get_template_directory_uri() .'/js/kadima_theme_script.js', array('jquery'));
         if(is_front_page()){
@@ -718,5 +718,11 @@
 		          ':?:' => 'icon_question.gif',
 	    );
 	}
-	//smilies_reset();
+	//smilies_reset();	
+	add_filter('woocommerce_page_title', 'customWooc_shop_page_title');
+	function customWooc_shop_page_title( $page_title ) {
+		if( 'Shop' == $page_title) {
+			return '';
+		}
+	}
 ?>

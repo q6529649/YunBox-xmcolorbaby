@@ -9,20 +9,21 @@ License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 Text Domain: kadima
 */
-
-/* Main css with editable-------------------------------------------------------------- */
-
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-button:vertical{display:none}
+::-webkit-scrollbar-corner,::-webkit-scrollbar-track{background-color:#e2e2e2}
+::-webkit-scrollbar-thumb{border-radius:0;background-color:rgba(0,0,0,.3)}
+::-webkit-scrollbar-thumb:vertical:hover{background-color:rgba(0,0,0,.35)}
+::-webkit-scrollbar-thumb:vertical:active{background-color:rgba(0,0,0,.38)}
 .row {
     margin-left: 0px;
     margin-right: 0px;
 }
-
-/* Header Section css-------------------------------------------------------------- */
-
 body {
-    /* padding:0 30px;*/
-    font-family: 'AVGARDN', 'Arimo', Arial, Helvetica, sans-serif;
-    background-color: #fff;
+    background-color: #ffffff;
+	font-family: filson-soft, sans-serif, 'AVGARDN', 'Arimo', Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 300;
 }
 #wrapper {
     position: relative;
@@ -37,13 +38,11 @@ a:hover, a:focus {
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
-    color: #666;
+    color: #333;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
-    font-family: 'AVGARDD', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 p, .textwidget {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 26px;
 }
@@ -70,13 +69,10 @@ p, .textwidget {
 .logo {
     text-align: left;
     padding-bottom: 0px;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 	float:left;
-	padding-top: 15px;
 }
 .logo a {
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
     font-size: 50px;
     color: #fff;
@@ -85,13 +81,11 @@ p, .textwidget {
     color: #fff;
 }
 .logo p {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     margin-top: 5px;
     color: #fff;
 }
 .social {
     display: block;
-    text-align: center;
     padding-top: 5px;
     padding-bottom: 0px;	
     margin-bottom: 0px;
@@ -176,7 +170,6 @@ p, .textwidget {
     font-weight: 500;
     text-transform: uppercase;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_heading_title2 {
     display: block;
@@ -188,7 +181,6 @@ p, .textwidget {
     letter-spacing: 1px;
     padding-bottom: 10px;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_heading_title2 h3 {
     font-size: 22px;
@@ -218,7 +210,6 @@ p, .textwidget {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 3em;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
@@ -249,7 +240,6 @@ p, .textwidget {
     margin-bottom: 10px;
     overflow: hidden;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     padding: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -324,7 +314,6 @@ p, .textwidget {
     word-wrap: break-word;
     margin: 0 0 10px;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_service_detail p {
     font-size: 16px;
@@ -364,7 +353,6 @@ p, .textwidget {
     letter-spacing: normal;
     line-height: 27px;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_service_detail_2 p {
     font-size: 18px;
@@ -514,7 +502,6 @@ p, .textwidget {
     border-radius: 0;
     padding: 0 0 15px;
     text-align: center;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
 .kadima_home_portfolio_caption h3 {
@@ -523,7 +510,6 @@ p, .textwidget {
     margin: 0;
     padding: 9px 3px 0px;
     line-height: 35px;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .kadima_home_portfolio_caption small {
     font-size: 13px;
@@ -548,7 +534,6 @@ p, .textwidget {
 }
 .kadima_proejct_button a {
     display: inline-block;
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
@@ -632,7 +617,6 @@ p, .textwidget {
 .kadima-project-description p {
     text-align: left;
     font-size: 16px;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
 .kadima-related-project {
@@ -675,7 +659,6 @@ p, .textwidget {
     padding-left: 10px;
 }
 .kadima-project-detail-sidebar p {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -684,7 +667,6 @@ p, .textwidget {
     padding-top: 0px;
 }
 .kadima-project-detail-sidebar p small {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 15px;
     padding-left: 0px;
     display: block;
@@ -693,7 +675,6 @@ p, .textwidget {
 .kadima-project-detail-sidebar .launch-kadima-project a {
     display: inline-block;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 20px;
     margin: 15px 0 15px;
@@ -828,13 +809,6 @@ p, .textwidget {
     bottom: 40%;
     left: 0;
 }
-
-/***************** BLog Section *************************************************************************
-***************************************************************************************************/
-
-
-/** wrapper for front page **/
-
 .kadima_blog_area {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1037,7 +1011,7 @@ p, .textwidget {
     transition: all 0.4s ease 0s;
 }
 .kadima_post_date {
-    background: #13A9EE !important;
+    background: #0e83cd !important;
 }
 .blog-date-right {
     list-style: none;
@@ -1079,7 +1053,6 @@ p, .textwidget {
     border-radius: 0px;
     display: block;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     width: 100px;
     padding-top: 10px;
     padding-left: 10px;
@@ -1126,7 +1099,6 @@ p, .textwidget {
     width: 100%;
 }
 .kadima_blog_post_content p {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 27px;
     margin: 0 0 20px;
@@ -1177,7 +1149,6 @@ p, .textwidget {
     margin: 0 0 0px !important;
 }
 .kadima_recent_widget_post h3, .kadima_footer_widget_column ul li {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 2px;
@@ -1200,7 +1171,6 @@ p, .textwidget {
     display: block;
 }
 .kadima_recent_widget_post_date {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 13px;
     line-height: 20px;
     color: #ffffff;
@@ -1228,7 +1198,6 @@ p, .textwidget {
 }
 .kadima_sidebar_widget .kadima_recent_widget_post h3 {
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 2px;
@@ -1237,7 +1206,6 @@ p, .textwidget {
 .kadima_sidebar_widget h3 {
     display: inline-block;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 5px;
@@ -1270,7 +1238,6 @@ p, .textwidget {
     border: 0 none;
     cursor: pointer;
     display: inline-block;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: normal;
     line-height: 20px;
@@ -1297,7 +1264,6 @@ p, .textwidget {
 */
 .kadima_footer_widget_column ul li, .kadima_footer_widget_column ul#recentcomments li a {
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 20px;
     transition: all 0.2s ease 0s;
@@ -1305,7 +1271,6 @@ p, .textwidget {
 .kadima_sidebar_link p a, .kadima_sidebar_widget ul li a {
     transition: all 0.4s ease 0s;
     display: block;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 20px;
 }
@@ -1320,7 +1285,6 @@ p, .textwidget {
 }
 .kadima_sidebar_link p, .kadima_sidebar_widget ul li {
     display: block;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 16px;
     transition: all 0.4s ease 0s;
     padding-bottom: 10px;
@@ -1342,7 +1306,6 @@ p, .textwidget {
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 14px !important;
     line-height: 20px;
     margin: 0 5px 10px 0;
@@ -1412,7 +1375,6 @@ p, .textwidget {
     color: #fff;
 }
 .kadima_author_detail_wrapper p {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 25px;
     margin: 0 0 0px;
@@ -1429,7 +1391,6 @@ p, .textwidget {
     margin: 0 0 5px;
 }
 .kadima_comment_title h3 {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 30px;
     line-height: 25px;
     margin: 0 0 -2px;
@@ -1458,14 +1419,12 @@ p, .textwidget {
     padding: 20px;
 }
 .kadima_comment_detail_title {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
     margin: 0px 0 5px;
 }
 .kadima_comment_detail p {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 25px;
     margin: 0 0 20px;
@@ -1477,10 +1436,8 @@ p, .textwidget {
     font-size: 14px;
     display: block;
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
 .reply {
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
 }
@@ -1504,7 +1461,6 @@ p, .textwidget {
     float: none;
 }
 .kadima_comment_form_section h2 {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 30px;
     letter-spacing: 1px;
     line-height: 25px;
@@ -1517,7 +1473,6 @@ p, .textwidget {
     top: 5px;
 }
 .kadima_comment_form_section label {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 20px;
     margin: 0 0 11px;
@@ -1553,7 +1508,6 @@ p, .textwidget {
 }
 .kadima_send_button, #kadima_send_button {
     font-weight: 600;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     display: inline-block;
     padding: 15px 40px;
     margin-bottom: 0;
@@ -1626,7 +1580,6 @@ p, .textwidget {
 .kadima_testimonial_area p {
     color: #727272;
     font-size: 20px;
-    font-family: 'georgia';
     font-style: italic;
     margin-bottom: 20px;
     line-height: 32px;
@@ -1727,7 +1680,6 @@ p, .textwidget {
 }
 .kadima_callout_area p {
     font-size: 22px;
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     line-height: 35px;
@@ -1747,7 +1699,6 @@ p, .textwidget {
 }
 .kadima_callout_area a {
     display: inline-block;
-    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
@@ -1777,38 +1728,28 @@ p, .textwidget {
     background-position: 0 -100%;
     color: #fff;
 }
-
-/***** Footer widget Area *****************************************************************
-***************************************************************************************/
-
+/* Footer widget Area */
 .kadima_footer_widget_area {
     padding: 20px 0 20px;
 }
 .kadima_footer_widget_area h6, .kadima_footer_widget_column .textwidget {
-    color: #f2f2f2;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 27px;
     margin-top: 25px;
+	color:#ffffff;
+	margin-top:0;
+	margin-bottom:0;
+	font-weight:300;
 }
 .kadima_footer_widget_area p {
     font-size: 13px;
     line-height: 22px;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
-}
-.kadima_footer_widget_area h6 {
-    color: #95a5a6;
-}
-.kadima_footer_widget_area p {
     color: #ffffff;
 }
 .kadima_footer_widget_area {
-	background: -moz-linear-gradient(top, #4cc5fc 0%, #03a1ea 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4cc5fc), color-stop(100%,#03a1ea));
-    background: -webkit-linear-gradient(top, #4cc5fc 0%,#03a1ea 100%);
-    background: -o-linear-gradient(top, #4cc5fc 0%,#03a1ea 100%);
-    background: -ms-linear-gradient(top, #4cc5fc 0%,#03a1ea 100%);
-    background: linear-gradient(to bottom, #4cc5fc 0%,#03a1ea 100%);
+	background-color: #0e83cd;
+	font-weight: 300;
+    font-size: 1.2em;
 }
 .kadima-footer-separator {
     background-color: #ffffff;
@@ -1822,7 +1763,6 @@ p, .textwidget {
     text-shadow: 0px 1px 2px #2a2a2a;
 }
 .kadima_footer_widget_title {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 24px;
     margin: 0px 0px 25px 0px;
     line-height: 25px;
@@ -1832,7 +1772,6 @@ p, .textwidget {
     margin-bottom: 50px;
 }
 .kadima_footer_widget_column address {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 25px;
 }
@@ -1860,7 +1799,6 @@ p, .textwidget {
 }
 .kadima_footer_widget_link a {
     display: block;
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     font-size: 13px;
     line-height: 20px;
     margin: 0 0 10px;
@@ -1880,9 +1818,9 @@ p, .textwidget {
 
 .kadima_footer_area {
     padding: 10px 0 0px;
+	background: #0e83cd;
 }
 .kadima_footer_area p {
-    font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
     line-height: 20px;
     font-size: 13px;
     bottom: 0;
@@ -2312,7 +2250,6 @@ table td {
         position: fixed;
         top: 0;
         width: 100%;
-        border-bottom: 2px solid #F7F5F5;
         z-index: 9999;
     }
     .carousel-caption {
@@ -2327,13 +2264,10 @@ table td {
         position: fixed;
         top: 0;
         width: 100%;
-        border-bottom: 2px solid #F7F5F5;
         z-index: 99997;
         left: 0;
     }
 }
-
-/* This Media screen css called for All Hc Pages Element---------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 960px) and (max-width: 1200px) {
     .kadima_gallery_page .col-md-3 {
@@ -2352,7 +2286,6 @@ table td {
         position: fixed;
         top: 0;
         width: 100%;
-        border-bottom: 2px solid #F7F5F5;
         z-index: 99997;
         left: 0;
     }
@@ -2378,7 +2311,6 @@ table td {
     }
     .social {
         display: block;
-        text-align: center;
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 0px;
@@ -2391,7 +2323,6 @@ table td {
         padding-left: 8px;
         padding-right: 8px;
         text-transform: uppercase;
-        font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
         font-weight: 600;
         font-size: 15px;
     }
@@ -2418,7 +2349,6 @@ table td {
         font-size: 0.9em;
         margin-bottom: 10px;
         overflow: hidden;
-        font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
         font-weight: 600;
         text-transform: uppercase;
     }
@@ -2535,7 +2465,6 @@ table td {
     }
     .social {
         display: block;
-        text-align: center;
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 0px;
@@ -2553,7 +2482,6 @@ table td {
         line-height: 16px;
         margin-bottom: 10px;
         overflow: hidden;
-        font-family: 'Abel', sans-serif;
         text-transform: uppercase;
     }
     .carousel-list {
@@ -2664,7 +2592,6 @@ table td {
         margin: 0 0 0px 0;
         padding: 5px;
         font-size: 7px;
-        font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
         color: #fff;
         text-transform: uppercase;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -2688,7 +2615,6 @@ table td {
         line-height: 8px;
         margin-bottom: 5px;
         overflow: hidden;
-        font-family: 'Abel', sans-serif;
         text-transform: uppercase;
     }
     /* .carousel-caption{
@@ -2794,7 +2720,6 @@ table td {
     }
     .social {
         display: block;
-        text-align: center;
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 0px;
@@ -2810,7 +2735,6 @@ table td {
         line-height: 8px;
         margin-bottom: 5px;
         overflow: hidden;
-        font-family: 'Abel', sans-serif;
         text-transform: uppercase;
     }
     .carousel-caption {
@@ -2931,4 +2855,284 @@ table td {
     .carousel-text .kadima_blog_read_btn {
         display: none;
     }
+}
+
+/* stable */
+.header_section {
+    background-color: #0e83cd;
+    color: #fff;
+}
+.shopimg{
+	width: 25px;
+    height: 25px;
+    background: url("./images/shopping.png") no-repeat 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+	margin-right:5px;
+    
+}
+.navigation_menu {
+	background-color: #0e83cd;
+}
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.2em;
+}
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+.navbar-default {
+    background-color: transparent;
+    border: 0;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;	
+    font-weight: 600;
+	line-height:1em;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #ffffff;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.active>a::before, .navbar-default .navbar-nav>.active>a:focus::before, .navbar-default .navbar-nav>.active>a:hover::before {
+	left: 50%;
+	-webkit-transform: rotate(0deg) translateX(-50%);
+	-moz-transform: rotate(0deg) translateX(-50%);
+	transform: rotate(0deg) translateX(-50%);
+}
+.navbar-default .navbar-nav>.active>a::after, .navbar-default .navbar-nav>.active>a:focus::after, .navbar-default .navbar-nav>.active>a:hover::after {
+	right: 50%;
+	-webkit-transform: rotate(0deg) translateX(50%);
+	-moz-transform: rotate(0deg) translateX(50%);
+	transform: rotate(0deg) translateX(50%);
+}
+/* Effect 2: 3D rolling links, idea from http://hakim.se/thoughts/rolling-links */
+.cl-effect-2 a {
+	line-height: 44px;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	perspective: 1000px;
+}
+.cl-effect-2 a span {
+	position: relative;
+	display: inline-block;
+	padding: 0 14px;
+	background: #2195de;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.csstransforms3d .cl-effect-2 a span::before {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #0965a0;
+	content: attr(data-hover);
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	transition: background 0.3s;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+}
+.cl-effect-2 a:hover span,
+.cl-effect-2 a:focus span {
+	-webkit-transform: rotateX(90deg) translateY(-22px);
+	-moz-transform: rotateX(90deg) translateY(-22px);
+	transform: rotateX(90deg) translateY(-22px);
+}
+.csstransforms3d .cl-effect-2 a:hover span::before,
+.csstransforms3d .cl-effect-2 a:focus span::before {
+	background: #28a2ee;	
+}
+/* Effect 14: border switch */
+.cl-effect-14 a {
+	padding: 0 20px;
+	height: 45px;
+	line-height: 45px;
+}
+.cl-effect-14 a::before,
+.cl-effect-14 a::after {
+	position: absolute;
+	width: 45px;
+	height: 2px;
+	background: #ffffff;
+	content: '';
+	opacity: 0.5;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	pointer-events: none;
+}
+.cl-effect-14 a::before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+.cl-effect-14 a::after {
+	right: 0;
+	bottom: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+.cl-effect-14 a:hover::before,
+.cl-effect-14 a:hover::after,
+.cl-effect-14 a:focus::before,
+.cl-effect-14 a:focus::after {
+	opacity: 1;
+}
+.cl-effect-14 a:hover::before,
+.cl-effect-14 a:focus::before {
+	left: 50%;
+	-webkit-transform: rotate(0deg) translateX(-50%);
+	-moz-transform: rotate(0deg) translateX(-50%);
+	transform: rotate(0deg) translateX(-50%);
+}
+.cl-effect-14 a:hover::after,
+.cl-effect-14 a:focus::after {
+	right: 50%;
+	-webkit-transform: rotate(0deg) translateX(50%);
+	-moz-transform: rotate(0deg) translateX(50%);
+	transform: rotate(0deg) translateX(50%);
+}
+.service-text {
+	background-color:#0e83cd;
+	color: #fff;
+	border-radius: 0 0 50% 50%;
+	line-height: 4em;
+	font-size: 1.5em;
+	font-weight: 400;
+}
+.service-text:hover {
+	background-color:#53d3ff;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.index_service_area {
+    padding-top: 20px;
+	padding-bottom: 40px;
+	background-color: #f3f3f3;
+}
+.index_about_area {
+    padding-top: 20px;
+    padding-bottom: 20px;
+	background-color: #f3f3f3;
+}
+.index_news_area {
+    padding-top:40px;
+	padding-bottom:40px;
+	background-color: #f3f3f3;
+}
+#kadima_blog_section li{
+	list-style-type:none;
+	font-size: 1.2em;
+    line-height: 2em;
+    font-weight: 400;
+}
+#kadima_blog_section a{
+	color:#333;
+}
+#newsCarousel .carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0) 0,rgba(0,0,0,.0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.0000) 0,rgba(0,0,0,.0) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0000)),to(rgba(0,0,0,.0)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.0000) 0,rgba(0,0,0,.0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+#newsCarousel .carousel-control.left {
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0) 0,rgba(0,0,0,.0000) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.0) 0,rgba(0,0,0,.0000) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0)),to(rgba(0,0,0,.0000)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.0) 0,rgba(0,0,0,.0000) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+#kadima_blog_section .col-md-8 .lnr{
+	width: 25px;
+    height: 25px;
+    background: url("./images/jt.png") no-repeat 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+	margin-right:5px;
+    
+}
+.kadima_fuul_blog_detail_padding {
+    padding-left: 20px;
+    float: left;
+    width: 100%;
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+	color: #fff;
+	background-color: #13A9EE;
+	border:1px solid #13A9EE;
+}
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover{
+	color:#13A9EE;
+	background-color: #fff;
+	border:1px solid #13A9EE;
+}
+#kadima_blog_section .col-md-3 img{
+	cursor: pointer !important;
+    transition: all 0.6s;
+	width: 100%;
+}
+#kadima_blog_section .col-md-3 img:hover{
+	transform: scale(0.9);
+}
+#kadima_blog_section .col-md-3{
+	overflow: hidden;
+}
+.woocommerce ul.products li.product h3 {
+    text-align: center;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    background-color: #fff;
+    border-radius: 10% 10% 0 0;
+}
+.woocommerce ul.products li.product a img {
+    border-radius: 10%;
+}
+.woocommerce a.button {
+    color: #13A9EE;
+    background-color: #fff;
+    border: 0;
 }
