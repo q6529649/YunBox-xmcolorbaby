@@ -878,15 +878,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .kadima_header_breadcrum_title {
     margin-bottom: 70px;
-    background: #13A9EE;
+    background: #eee;
     opacity: 1;
     padding-top: 8px;
     padding-bottom: 8px;
+	border-top: 1px solid #13A9EE;
 }
 .kadima_header_breadcrum_title h1 {
     color: #777777;
 	font-size: 24px;
-	color:#fff;
+	color:#333;
 }
 .breadcrumb {
     font-size: 17px;
@@ -903,17 +904,17 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
 }
 .breadcrumb li a {
-    color: #fff;
+    color: #666;
 }
 .breadcrumb li  {
-    color: #fff;
+    color: #666;
 }
 .breadcrumb> .active {
     color: #000;
 }
 .breadcrumb> li+ li:before {
     padding: 0 5px;
-    color: #fff;
+    color: #666;
     content: "/\00a0";
 }
 .kadima_header_breadcrum_title .row .col-md-12 h1{
