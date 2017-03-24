@@ -17,7 +17,7 @@
 				</div>
 				<div class="row" style="margin-bottom: 20px;">
 					<h6 class="col-md-2 pull-left">Email: </h6>
-					<span class="col-md-10" style="color:#fff;">sam@xmcolorbaby.com</span>
+					<span class="col-md-10" style="color:#fff;">sales8@xmcolorbaby.com</span>
 				</div>
 				<?php if($theme_options['footer_section_social_media_enbled'] == '1') { ?>
 				<div class="row">
