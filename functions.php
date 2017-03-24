@@ -155,7 +155,7 @@
             $parentCat = get_category($thisCat->parent);
             if ($thisCat->parent != 0)
                 echo(get_category_parents($parentCat, TRUE, ' ' . $delimiter . ' '));
-            echo $before . ' _e("Archive by category","kadima") "' . single_cat_title('', false) . '"' . $after;
+            echo $before . single_cat_title('', false) . $after;
         } elseif (is_day()) {
             echo '<li><a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a></li> ' . $delimiter . ' ';
             echo '<li><a href="' . get_month_link(get_the_time('Y'), get_the_time('m')) . '">' . get_the_time('F') . '</a></li> ' . $delimiter . ' ';
@@ -271,12 +271,12 @@
 	/* Navigation for Single */
 	function kadima_navigation_posts() { ?>
     	<div class="navigation_en">
-        	<nav id="wblizar_nav">
+        	<nav id="page_nav">
             	<span class="nav-previous">
-            	       <?php previous_post_link('&laquo; %link'); ?>
+				   <?php previous_post_link('&laquo; %link'); ?>
             	</span>
             	<span class="nav-next">
-            	       <?php next_post_link('%link &raquo;'); ?>
+				   <?php next_post_link('%link &raquo;'); ?>
             	</span>
         	</nav>
     	</div>

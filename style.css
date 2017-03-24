@@ -833,10 +833,10 @@ p, .textwidget {
     margin-top: 0px;
 }
 .kadima_blog_thumb_wrapper h2 a:hover {
-    color: #34495e !important;
+    color: #53d3ff !important;
 }
 .kadima_fuul_blog_detail_padding h2 a:hover {
-    color: #34495e !important;
+    color: #53d3ff !important;
 }
 .kadima_blog_thumb_wrapper {
     position: relative;
@@ -1104,10 +1104,10 @@ p, .textwidget {
     margin: 0 0 20px;
 }
 .kadima_blog_post_content p {
-    color: #777777;
+    color: #333333;
+	font-weight: 400;
 }
-.kadima_fuul_blog_detail_padding {
- 
+.kadima_fuul_blog_detail_padding { 
     float: left;
     width: 100%;
 }
@@ -2157,9 +2157,7 @@ table td {
     display: block;
 }
 .sticky {}
-
 /*HTML POST HEADING CSS*/
-
 .kadima_fuul_blog_detail_padding h1, .kadima_fuul_blog_detail_padding h3, .kadima_fuul_blog_detail_padding h4, .kadima_fuul_blog_detail_padding h5, .kadima_fuul_blog_detail_padding h5, .kadima_fuul_blog_detail_padding h6 {
     color: #31A3DD;
     margin-top: 10px;
@@ -2172,17 +2170,11 @@ table td {
     padding-top: 20px;
 }
 .nav-previous {
-    /*float: left;*/
     width: 50%;
 }
 .nav-next {
-    /*float: right;
-    text-align: right;*/
     padding-left: 15%;
     width: 50%;
-}
-.navigation_en {
-    padding-bottom: 5%;
 }
 .fa-arrow-left:before {
     content: "\f060";
@@ -2190,9 +2182,7 @@ table td {
 .fa-arrow-right:before {
     content: "\f061";
 }
-
 /* Flickr Gallery Shortcode */
-
 .col-md-3.col-sm-4.col-center.weblizar-flickr-div a {
     display: inline-block !important;
 }
@@ -3121,8 +3111,17 @@ nav a:focus {
 #kadima_blog_section .col-md-3{
 	overflow: hidden;
 }
+#page_nav a {
+	color: #0e83cd;
+}
 .woocommerce ul.products li.product h3 {
     text-align: center;
+	background-color:#0e83cd;
+	line-height: 1em;
+    color: #ffffff;
+    font-size: 1.6em;
+    font-weight: 400;
+    border-radius: 10px;
 }
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
     background-color: #fff;

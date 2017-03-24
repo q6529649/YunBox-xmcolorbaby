@@ -45,7 +45,4 @@
 	          wp_link_pages( $defaults ); ?>
 		</div>
 	</div>
-</div>	
-<div class="push-right">
-<hr class="blog-sep header-sep">
 </div>

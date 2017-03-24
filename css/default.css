@@ -246,24 +246,24 @@
     padding-bottom: 10px;
 }
 .kadima_blog_comment:hover i, .kadima_blog_comment:hover h6 {
-    color: #31A3DD;
+    color: #0e83cd;
 }
 .kadima_fuul_blog_detail_padding h2 a, .kadima_fuul_blog_detail_padding h2 {
-    color: #31A3DD;
+    color: #0e83cd;
 }
 .kadima_fuul_blog_detail_padding h2 a:hover {
-    color: #31A3DD;
+    color: #0e83cd;
 }
 
 /*** blog sidebar css **/
 
 .kadima_recent_widget_post h3 a {
-    color: #13A9EE;
+    color: #0e83cd;
 }
 .kadima_sidebar_widget {
-    border-left: 3px solid #13A9EE;
-    border-right: 3px solid #13A9EE;
-    border-bottom: 3px solid #13A9EE;
+    border-left: 3px solid #0e83cd;
+    border-right: 3px solid #0e83cd;
+    border-bottom: 3px solid #0e83cd;
     background-color: #ffffff;
 }
 .kadima_sidebar_widget_title {
@@ -566,12 +566,12 @@ h1, h2, h3, h4, h5, h6 {
 **************************************************************************************************************************/
 
 .kadima_header_breadcrum_title {
-    margin-bottom: 70px;
+    margin-bottom: 0px;
     background: #eee;
     opacity: 1;
     padding-top: 8px;
     padding-bottom: 8px;
-	border-top: 1px solid #13A9EE;
+	border:0;
 }
 .kadima_header_breadcrum_title h1 {
     color: #777777;
@@ -579,7 +579,7 @@ h1, h2, h3, h4, h5, h6 {
 	color:#333;
 }
 .breadcrumb {
-    font-size: 17px;
+	font-size: 1.4em;
     padding: 0;
     position: relative;
     display: inline-block;
