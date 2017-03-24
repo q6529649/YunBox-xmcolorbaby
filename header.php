@@ -36,6 +36,20 @@
 	<?php wp_head(); ?>
 	<script src="https://use.typekit.net/nda5ask.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<script type="text/javascript">
+	  var _paq = _paq || [];
+	  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+		var u="//analytics.yunclever.com/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '18']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
+
 </head>
 <body <?php body_class(); ?>>
 
@@ -71,7 +85,7 @@
 						);
 					?>
 					<div style="margin-top:1vh;">
-						<a href="//xmcolorbaby.site.yunclever.com/shop" target="_blank"><i class="shopimg"></i></a>
+						<a href="//www.xmcolorbaby.com/product" target="_blank"><i class="shopimg"></i></a>
 					</div>
 					<div id="google_translate_element"></div>
 				</div>
