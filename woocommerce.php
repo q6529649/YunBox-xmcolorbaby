@@ -8,7 +8,7 @@
 		</div>
 	</div>	
 </div>
-<div class="container">
+<div class="container" style="padding-top:2em;">
 	<div class="row kadima_blog_wrapper">
 		<div class="col-md-12">
 			<?php woocommerce_content(); ?>

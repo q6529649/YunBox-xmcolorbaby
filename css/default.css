@@ -267,10 +267,10 @@
     background-color: #ffffff;
 }
 .kadima_sidebar_widget_title {
-    background: #31A3DD;
+    background: #0e83cd;
 }
 .kadima_sidebar_link p a:hover, .kadima_sidebar_widget ul li a:hover {
-    color: #31A3DD;
+    color: #0e83cd;
 }
 .kadima_widget_tags a, .tagcloud a {
     background-size: 100% 200%;
@@ -278,8 +278,8 @@
     background-image: linear-gradient(to bottom, #edf0f2 50%, #31A3DD 50%);
 }
 .kadima_widget_tags a:hover, .tagcloud a:hover {
-    border: 1px solid #31A3DD;
-    background-color: #31A3DD;
+    border: 1px solid #0e83cd;
+    background-color: #0e83cd;
     background-position: 0 -100%;
     color: #ffffff;
 }
