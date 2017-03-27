@@ -17,11 +17,11 @@
 			</div>
 		</div>
 		<p class="p1" style="text-align:center;">
-			<img src="//xmcolorbaby.site.yunclever.com/wp-content/themes/kadima/images/imac-bg.png">
+			<img src="//www.xmcolorbaby.com/wp-content/themes/kadima/images/imac-bg.png">
 		</p>
 	</div>
 </div>
-<!-- style="background-image:url(//xmcolorbaby.site.yunclever.com/wp-content/themes/kadima/images/bjt.jpg);background-size:cover;background-position:top;color: #ffffff;padding-top:20px;padding-bottom:20px;" --->
+<!-- style="background-image:url(//www.xmcolorbaby.com/wp-content/themes/kadima/images/bjt.jpg);background-size:cover;background-position:top;color: #ffffff;padding-top:20px;padding-bottom:20px;" --->
 <div style="background-color:#f19f0f;color: #ffffff;padding-top:3.5em;padding-bottom:3.5em;">
 	<div class="container">
 		<div class="row">

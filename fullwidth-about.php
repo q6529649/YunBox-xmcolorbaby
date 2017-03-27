@@ -6,7 +6,7 @@ get_template_part('breadcrums'); ?>
 		<div class="row kadima_blog_wrapper">
 			<div class="col-md-12">
 				<div style="padding:1em;">
-					<img src="//xmcolorbaby.site.yunclever.com/wp-content/themes/kadima/images/about-title.png" />
+					<img src="//www.xmcolorbaby.com/wp-content/themes/kadima/images/about-title.png" />
 				</div>	
 				<?php get_template_part('post','page'); ?>	
 			</div>		
