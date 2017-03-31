@@ -9,7 +9,7 @@
 						<div class="row">					
 						<?php for($i=1; $i<=4; $i++ ) { ?>
 							<div class="col-md-3 news-grid wow fadeInLeft animated" data-wow-delay="0.4s">
-								<div>
+								<div style="background-color: #fff;border-radius: 10% 10% 100px 100px;">
 									<a href="<?php echo esc_url($theme_options['service_link_'.$i]); ?>">
 										<img src="<?php echo esc_attr($theme_options['service_img_'.$i]); ?>" alt="<?php echo esc_attr($theme_options['service_text_'.$i]); ?>" style="border-radius: 10% 10% 0 0;">
 										<div class="service-text text-center">
