@@ -17,7 +17,7 @@
 			</div>
 		</div>
 		<p class="p1" style="text-align:center;">
-			<img src="//www.xmcolorbaby.com/wp-content/themes/kadima/images/imac-bg.png">
+			<img style="width:100%;" src="//www.xmcolorbaby.com/wp-content/themes/kadima/images/imac-bg.png">
 		</p>
 	</div>
 </div>
@@ -52,7 +52,7 @@
 											</p>
 										</div>
 									<?php } else { ?>
-										<div class="pull-left">
+										<div class="pull-left text-cn">
 											<div class="col-md-1"></div>
 											<i class="col-md-2">
 												<img style="height: 75px;margin-top: 10px" src="<?php echo esc_url($theme_options['custom_img_1_'.$i]); ?>">

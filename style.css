@@ -2860,7 +2860,26 @@ table td {
 	.nav>li{
 		text-align: center;
 	}
-	
+	.pull-right{
+		float:none !important;
+		text-align: center;
+	}
+	.pull-left{
+		float:none !important;
+		
+	}
+	.text-cn{
+		text-align:center !important;
+	}
+	.col-md-1{
+		margin-top:0;
+	}
+	.text-right{
+		text-align:center;
+	}
+	.fadeInLeft{
+		font-size:33px !important;
+	}
 }
 
 /* stable */
