@@ -910,3 +910,12 @@ h1, h2, h3, h4, h5, h6 {
 .kadima_footer_social_div2 ul li a.dribbble{
     background: url(../images/icons.png) no-repeat -164px 0px;
 }
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #fff;
+}
+.navbar-toggle {
+    margin-top: 48px;
+}
+.shopping{
+	margin-top:1vh;
+}

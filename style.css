@@ -2570,6 +2570,9 @@ table td {
     .carousel-caption {
         top: 20%;
     }
+	.shopping{
+		display:none;
+	}
 }
 @media only screen and (min-width: 200px) and (max-width: 600px) {
     .dropdown-menu {
@@ -2845,6 +2848,19 @@ table td {
     .carousel-text .kadima_blog_read_btn {
         display: none;
     }
+	.shopping{
+		display:none;
+	}
+	.fa{
+		float: right;
+	}
+	.affix{
+		position:static;
+	}
+	.nav>li{
+		text-align: center;
+	}
+	
 }
 
 /* stable */

@@ -57,14 +57,7 @@
 	<div class="navigation_menu"  data-spy="affix" data-offset-top="95" id="kadima_nav_top">
 		<div class="container navbar-container" >
 			<nav class="navbar navbar-default " role="navigation">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-					  <span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
-					  <span class="icon-bar"></span>
-					  <span class="icon-bar"></span>
-					  <span class="icon-bar"></span>
-					</button>
-				</div>
+				
 				<div class="logo">
 					<a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php if($theme_options['upload_image_logo']){ ?>
@@ -73,8 +66,15 @@
 							echo get_bloginfo('name');
 						} ?>
 					</a>
-				
-					</div>
+				</div>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+					  <span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					</button>
+				</div>
 				<div id="menu" class="collapse navbar-collapse" style="margin-top:1vh;">
 					<?php
 						wp_nav_menu( array(
@@ -84,7 +84,7 @@
 							)
 						);
 					?>
-					<div style="margin-top:1vh;">
+					<div  class="shopping">
 						<a href="//www.xmcolorbaby.com/product" target="_blank"><i class="shopimg"></i></a>
 					</div>
 					<div id="google_translate_element"></div>
